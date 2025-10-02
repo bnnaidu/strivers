@@ -1,0 +1,34 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug C++ (Interactive)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/myapp",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "console": "integratedTerminal",
+            "preLaunchTask": "Build C++17"
+        },
+        {
+            "name": "Debug C++ (With input.txt → output.txt)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "/bin/bash",
+            "args": [
+                "-c",
+                "${fileDirname}/myapp < ${fileDirname}/input.txt > ${fileDirname}/output.txt"
+            ],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "console": "integratedTerminal",
+            "preLaunchTask": "Build C++17"
+        }
+    ]
+}
