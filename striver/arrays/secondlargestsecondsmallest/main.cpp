@@ -62,10 +62,8 @@ int main()
     std::vector<int> v = {1, 3, 0, 4, 7, 4, 7};
     std::array<int, 2> arr = secondSmallestSecondLargest(v);
 
-    for (int i : arr)
-    {
-        std::cout << i << std::endl;
-    }
+    std::cout << "second smallest: " << arr.front() << std::endl;
+    std::cout << "second largest: " << arr.back() << std::endl;
 
     return 0;
 }
