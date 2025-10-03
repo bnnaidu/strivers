@@ -2,9 +2,9 @@
 
 int main()
 {
-    int arr[] = {0, 1, 0, 3, 12, 0};
+    int arr[] = {1, 0, 2, 3, 2, 0, 0, 4, 5, 1};
     int i = 0;
-    for (int j = 0; j < 6; j++)
+    for (int j = 0; j < 10; j++)
     {
         if (arr[j] != 0)
         {
